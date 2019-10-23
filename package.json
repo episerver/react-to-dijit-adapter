@@ -1,0 +1,7 @@
+{
+    "name": "@episerver/dijit-adapter",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "github:ben-mckernan/react-to-dijit-adapter",
+    "license": "MIT"
+}
