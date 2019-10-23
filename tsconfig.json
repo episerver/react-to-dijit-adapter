@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        // Target latest version of ECMAScript.
+        "target": "esnext",
+        // Support JSX in .tsx files.
+        "jsx": "preserve",
+        // Don't emit; allow Babel to transform files.
+        "noEmit": true,
+        // Enable all strict type checking options.
+        "strict": true,
+        // Disallow features that require cross-file information for emit.
+        "isolatedModules": true,
+        // Search under node_modules for non-relative imports.
+        "moduleResolution": "node",
+        // Import non-ES modules as default imports.
+        "esModuleInterop": true
+    }
+}
