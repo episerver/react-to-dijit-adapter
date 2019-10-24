@@ -17,10 +17,12 @@
         "@babel/preset-env": "^7.6.3",
         "@babel/preset-react": "^7.6.3",
         "@babel/preset-typescript": "^7.6.0",
-        "react": "^16.11.0",
-        "react-dom": "^16.11.0",
         "rollup": "^1.25.2",
         "rollup-plugin-babel": "^4.3.3",
         "typescript": "^3.6.4"
+    },
+    "peerDependencies": {
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0"
     }
 }
