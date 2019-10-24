@@ -4,12 +4,13 @@
         "target": "esnext",
         // Support JSX in .tsx files.
         "jsx": "preserve",
+        // Generate declarations.
+        "declaration": true,
+        "declarationDir": "dist",
         // Don't emit; allow Babel to transform files.
-        "noEmit": true,
+        "emitDeclarationOnly": true,
         // Enable all strict type checking options.
         "strict": true,
-        // Disallow features that require cross-file information for emit.
-        "isolatedModules": true,
         // Search under node_modules for non-relative imports.
         "moduleResolution": "node",
         // Import non-ES modules as default imports.
