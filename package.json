@@ -4,7 +4,13 @@
     "main": "index.js",
     "repository": "github:ben-mckernan/react-to-dijit-adapter",
     "license": "MIT",
+    "dependencies": {
+        "@types/react": "*",
+        "@types/react-dom": "*"
+    },
     "devDependencies": {
+        "react": "^16.11.0",
+        "react-dom": "^16.11.0",
         "typescript": "^3.6.4"
     }
 }
