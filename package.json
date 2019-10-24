@@ -1,16 +1,25 @@
 {
     "name": "@episerver/dijit-adapter",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "dist/bundle.js",
     "repository": "github:ben-mckernan/react-to-dijit-adapter",
     "license": "MIT",
+    "scripts": {
+        "build": "rollup -c"
+    },
     "dependencies": {
         "@types/react": "*",
         "@types/react-dom": "*"
     },
     "devDependencies": {
+        "@babel/core": "^7.6.4",
+        "@babel/preset-env": "^7.6.3",
+        "@babel/preset-react": "^7.6.3",
+        "@babel/preset-typescript": "^7.6.0",
         "react": "^16.11.0",
         "react-dom": "^16.11.0",
+        "rollup": "^1.25.2",
+        "rollup-plugin-babel": "^4.3.3",
         "typescript": "^3.6.4"
     }
 }
