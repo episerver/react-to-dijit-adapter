@@ -5,6 +5,9 @@
     "types": "dist/index.d.ts",
     "repository": "github:ben-mckernan/react-to-dijit-adapter",
     "license": "MIT",
+    "files": [
+        "dist/"
+    ],
     "scripts": {
         "build": "rollup -c && tsc"
     },
