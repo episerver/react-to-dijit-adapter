@@ -13,9 +13,16 @@ export const asEditorWidget = (WrappedComponent: ComponentType<EditorProps>): un
     return declare([WidgetBase], {
         class: "dijitInline",
         handleChange: function (value: any) {
-            this.onFocus();
             this.set("value", value);
             this.onChange(value);
+        },
+        postCreate: function () {
+            this.domNode.addEventListener("focus", function (this: any) {
+                this.onFocus();
+            }.bind(this), true);
+            this.domNode.addEventListener("blur", function (this: any) {
+                this.onBlur();
+            }.bind(this), true);
         },
         uninitialize: function () {
             ReactDOM.unmountComponentAtNode(this.domNode);
