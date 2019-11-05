@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/ben-mckernan/react-to-dijit-adapter/compare/v1.0.1...v1.0.2) (2019-11-05)
+
+
+### Bug Fixes
+
+* Capture focus and blur events from react component ([355f3c1](https://github.com/ben-mckernan/react-to-dijit-adapter/commit/355f3c1aca5c6e262a6b5d392c1cb155c7ce5043))
+
+
+
 ## [1.0.1](https://github.com/ben-mckernan/react-to-dijit-adapter/compare/v1.0.0...v1.0.1) (2019-10-30)
 
 
