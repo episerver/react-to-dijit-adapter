@@ -4,6 +4,7 @@ import declare from "dojo/_base/declare";
 import WidgetBase from "dijit/_WidgetBase";
 
 export interface EditorProps {
+    [index: string]: any;
     onChange: (value: any) => void;
     readOnly?: boolean;
     value: any;
@@ -31,6 +32,7 @@ export const asEditorWidget = (WrappedComponent: ComponentType<EditorProps>): un
             this.value = value;
             ReactDOM.render(
                 <WrappedComponent
+                    {...this.editorProps}
                     onChange={this.handleChange.bind(this)}
                     readOnly={this.readOnly}
                     value={value}
