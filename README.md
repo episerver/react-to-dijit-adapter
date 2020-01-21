@@ -54,3 +54,34 @@ module.exports = {
     ]
 };
 ```
+
+## Using Custom Props
+
+It is possible to pass custom props to your editor by using either an `EditorDescriptor` or an `IMetadataAware` attribute. In both scenarios, the custom props that you want to pass to your editor should be added to an object that is assigned to the `"editorProps"` key in the `EditorConfiguration` dictionary. For example:
+
+```csharp
+[AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
+public class MyEditorPropsAttribute : Attribute, IMetadataAware
+{
+    public void OnMetadataCreated(ModelMetadata metadata)
+    {
+        if (!(metadata is ExtendedMetadata extendedMetadata))
+        {
+            return;
+        }
+
+        extendedMetadata.EditorConfiguration["editorProps"] = new
+        {
+            MyProp = "Hello, world!"
+        };
+    }
+}
+```
+
+These will then be available via your component's props argument.
+
+```javascript
+const MyComponent = ({ onChange, value, myProp }) => {
+    // Your component logic here...
+};
+```
