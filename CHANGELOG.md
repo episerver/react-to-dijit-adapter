@@ -1,3 +1,17 @@
+# [1.1.0](https://github.com/ben-mckernan/react-to-dijit-adapter/compare/v1.0.1...v1.1.0) (2020-01-22)
+
+
+### Bug Fixes
+
+* Capture focus and blur events from react component ([355f3c1](https://github.com/ben-mckernan/react-to-dijit-adapter/commit/355f3c1aca5c6e262a6b5d392c1cb155c7ce5043))
+
+
+### Features
+
+* Spread custom editor props to react component ([8528d4a](https://github.com/ben-mckernan/react-to-dijit-adapter/commit/8528d4abc2c53f3916dd5410b1a7c26954a91361))
+
+
+
 ## [1.0.2](https://github.com/ben-mckernan/react-to-dijit-adapter/compare/v1.0.1...v1.0.2) (2019-11-05)
 
 

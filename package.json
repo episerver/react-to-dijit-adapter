@@ -1,6 +1,6 @@
 {
     "name": "@episerver/react-to-dijit-adapter",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "main": "dist/bundle.js",
     "types": "dist/index.d.ts",
     "repository": "github:ben-mckernan/react-to-dijit-adapter",
