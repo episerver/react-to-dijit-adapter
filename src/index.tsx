@@ -8,6 +8,7 @@ export interface EditorProps {
     onChange: (value: any) => void;
     readOnly?: boolean;
     value: any;
+    params: any;
 }
 
 export const asEditorWidget = (WrappedComponent: ComponentType<EditorProps>): unknown => {
@@ -36,6 +37,7 @@ export const asEditorWidget = (WrappedComponent: ComponentType<EditorProps>): un
                     onChange={this.handleChange.bind(this)}
                     readOnly={this.readOnly}
                     value={value}
+                    params={this.params}
                 />,
                 this.domNode
             );
